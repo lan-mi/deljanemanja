@@ -59,6 +59,22 @@ nav li a:focus {
   position: absolute;
   bottom: 4px; }
 
-#ver:hover,
-#hor:hover {
-  border-color: red; }
+/* */
+.slide {
+  display: none;
+  width: 80%; }
+
+.text {
+  position: absolute;
+  left: 35vw;
+  right: 15vw; }
+
+.prev {
+  margin: 30px;
+  position: absolute;
+  left: 15vw; }
+
+.next {
+  margin: 30px;
+  right: 5px;
+  position: absolute; }
