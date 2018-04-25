@@ -14,7 +14,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("slide");
+    var slides = document.getElementsByClassName("wrapper");
     if (n > slides.length) {
         slideIndex = 1
     }
@@ -26,3 +26,13 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
+
+
+
+/* */
+
+$(document).ready(function () {
+    $(".name-index").hover(function () {
+        $(this).addClass("display");
+    });
+});
