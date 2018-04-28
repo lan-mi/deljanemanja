@@ -17,19 +17,20 @@
 </head>
 
 <body>
-    <img src="img/landing.JPG" id="img">
-
+    <div class="img">
+        <img src="img/landing.JPG" alt="landing">
+    </div>
     <div class="name-index">
         <h3><a href="index.html">Delja Nemanja</a></h3>
     </div>
     <nav>
         <ul class="nav">
-            <li><a href="#" id="link1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Menu <div id="plus">
+            <li><a href="#" id="link1" onclick="change();" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Menu <div id="plus">
                 <div id="ver"></div>
                 <div id="hor"></div>
             </div></a>
                 <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="menu">
-                    <li><a href="#" id="link" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">Works <div id="plus">
+                    <li><a href="#" id="link" onclick="changeX();" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">Works <div id="plus">
                 <div id="ver"></div>
                 <div id="hor"></div>
             </div></a>
@@ -41,7 +42,7 @@
                             <li><a href="graffiti.html" class="link2">Graffiti</a></li>
                             <li><a href="jealousy.html" class="link2">Jealousy</a></li>
                             <li><a href="fragments.html" class="link2">Fragments</a></li>
-                            <li><a href="differentia_specifica.html" class="link2">Differentia specifica <br> (visual assumption of a family)</a></li>
+                            <li><a href="differentia_specifica.html" class="link2" id="navi-link">Differentia specifica <br> (visual assumption of a family)</a></li>
                             <li><a href="father.html" class="link2">Father</a></li>
                             <li><a href="memory.html" class="link2">Memory</a></li>
                             <li><a href="myth.html" class="link2">Myth</a></li>

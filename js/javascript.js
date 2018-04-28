@@ -1,5 +1,4 @@
-/* */
-
+/* Slider */
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -28,11 +27,31 @@ function showSlides(n) {
 }
 
 
+/* */
+
+
+var open = false
+
+function change() {
+    if (open) {
+        document.getElementById("ver-2").style.display = "none";
+        open = false;
+    } else {
+        document.getElementById("ver-2").style.display = "block";
+        open = true;
+    }
+}
 
 /* */
 
-$(document).ready(function () {
-    $(".name-index").hover(function () {
-        $(this).addClass("display");
-    });
-});
+var navi = true
+
+function changeX() {
+    if (navi) {
+        document.getElementById("ver-3").style.display = "block";
+        navi = false;
+    } else {
+        document.getElementById("ver-3").style.display = "none";
+        navi = true;
+    }
+}
