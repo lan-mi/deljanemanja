@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
 
-
 body
     font-family: 'IBM Plex Sans', sans-serif;
 
+/* Navigation index page */
 
 nav
     width: 200px
@@ -34,8 +34,13 @@ nav li a:focus
 .nav-2 li a
     color: #000 !important
     
+#navi-link
+    line-height: 100%
+    
 .navigation
     margin-left: -15px
+    
+/* Main name */
     
 .name
     width: 200px
@@ -62,129 +67,99 @@ nav li a:focus
     color: #fff
     text-decoration: none
     
-/* Index page menu collapse plus */ 
+/* Variables for collapsive menu*/
+
+%plus
+    width: 10px
+    height: 10px
+    display: inline-block
+    position: relative
+    
+%ver-white
+    width: 2px
+    height: 10px
+    border: 1px solid #fff
+    left: 4px
+    position: absolute
+    
+%ver-black
+    width: 2px
+    height: 10px
+    border: 1px solid #000
+    left: 4px
+    position: absolute
+    
+%hor-white
+    width: 10px
+    height: 2px
+    border: 1px solid #fff
+    position: absolute
+    bottom: 4px
+    
+%hor-black
+    width: 10px
+    height: 2px
+    border: 1px solid #000
+    position: absolute
+    bottom: 4px
+    
+/* Menu collapse plus div */ 
 
 #plus-a
-    width: 10px
-    height: 10px
-    display: inline-block
-    position: relative
+    @extend %plus
     
 #ver-a
-    width: 2px
-    height: 10px
-    border: 1px solid #fff
-    left: 4px
-    position: absolute
+    @extend %ver-white
     
 #hor-a
-    width: 10px
-    height: 2px
-    border: 1px solid #fff
-    position: absolute
-    bottom: 4px
+    @extend %hor-white
     
 #plus-b
-    width: 10px
-    height: 10px
-    display: inline-block
-    position: relative
+    @extend %plus
     
 #ver-b
-    width: 2px
-    height: 10px
-    border: 1px solid #fff
-    left: 4px
-    position: absolute
+    @extend %ver-white
     
 #hor-b
-    width: 10px
-    height: 2px
-    border: 1px solid #fff
-    position: absolute
-    bottom: 4px
+    @extend %hor-white
     
 #plus-2
-    width: 10px
-    height: 10px
-    display: inline-block
-    position: relative
+    @extend %plus
     
 #ver-2
-    width: 2px
-    height: 10px
-    border: 1px solid #000
-    left: 4px
-    position: absolute
+    @extend %ver-black
     
 #hor-2
-    width: 10px
-    height: 2px
-    border: 1px solid #000
-    position: absolute
-    bottom: 4px
+    @extend %hor-black
     
 #plus-3
-    width: 10px
-    height: 10px
-    display: inline-block
-    position: relative
+    @extend %plus
     
 #ver-3
-    width: 2px
-    height: 10px
-    border: 1px solid #000
-    left: 4px
-    position: absolute
+    @extend %ver-black
     
 #hor-3
-    width: 10px
-    height: 2px
-    border: 1px solid #000
-    position: absolute
-    bottom: 4px
+    @extend %hor-black
     
 #plus-d
-    width: 10px
-    height: 10px
-    display: inline-block
-    position: relative
+    @extend %plus
     
 #ver-d
-    width: 2px
-    height: 10px
-    border: 1px solid #000
-    left: 4px
-    position: absolute
+    @extend %ver-black
     
 #hor-d
-    width: 10px
-    height: 2px
-    border: 1px solid #000
-    position: absolute
-    bottom: 4px
+    @extend %hor-black
     
 #plus-c
-    width: 10px
-    height: 10px
-    display: inline-block
-    position: relative
+    @extend %plus
     
 #ver-c
-    width: 2px
-    height: 10px
-    border: 1px solid #000
-    left: 4px
-    position: absolute
+    @extend %ver-black
     
 #hor-c
-    width: 10px
-    height: 2px
-    border: 1px solid #000
-    position: absolute
-    bottom: 4px
+    @extend %hor-black
 
-/* test */
+/* Slider */
 
 .slide-container
     bottom: 15px
@@ -244,38 +219,8 @@ nav li a:focus
     right: 1px
     margin-bottom: -12px
     padding-left: 8px
+    
+/* Biography page */
 
 .bio
-    margin-top: 20vh
-    
-#navi-link
-    line-height: 100%
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    margin-top: 20px

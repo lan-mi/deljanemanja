@@ -27,8 +27,7 @@ function showSlides(n) {
 }
 
 
-/* */
-
+/* Collapsive menu plus div - show-hide */
 
 var open = false;
 
@@ -56,12 +55,7 @@ function changeX() {
     }
 }
 
-
-
-
-
-/* */
-
+/* Index page collapsive menu plus div - show-hide */
 
 var openIndex = false;
 
@@ -89,12 +83,7 @@ function changeXIndex() {
     }
 }
 
-
-
-
-
-/* */
-
+/* Collapsive menu submenu plus div - show-hide */
 
 var openInner = false;
 
