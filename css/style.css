@@ -25,6 +25,9 @@ nav li a:focus {
   position: fixed;
   margin-top: -100px; }
 
+.nav-2 {
+  line-height: 60%; }
+
 .nav-2 li a {
   color: #000 !important; }
 
@@ -54,20 +57,41 @@ nav li a:focus {
   color: #fff;
   text-decoration: none; }
 
-#plus {
+/* Index page menu collapse plus */
+#plus-a {
   width: 10px;
   height: 10px;
   display: inline-block;
   position: relative; }
 
-#ver {
+#ver-a {
   width: 2px;
   height: 10px;
   border: 1px solid #fff;
   left: 4px;
   position: absolute; }
 
-#hor {
+#hor-a {
+  width: 10px;
+  height: 2px;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 4px; }
+
+#plus-b {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: relative; }
+
+#ver-b {
+  width: 2px;
+  height: 10px;
+  border: 1px solid #fff;
+  left: 4px;
+  position: absolute; }
+
+#hor-b {
   width: 10px;
   height: 2px;
   border: 1px solid #fff;
@@ -108,6 +132,46 @@ nav li a:focus {
   position: absolute; }
 
 #hor-3 {
+  width: 10px;
+  height: 2px;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 4px; }
+
+#plus-d {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: relative; }
+
+#ver-d {
+  width: 2px;
+  height: 10px;
+  border: 1px solid #000;
+  left: 4px;
+  position: absolute; }
+
+#hor-d {
+  width: 10px;
+  height: 2px;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 4px; }
+
+#plus-c {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: relative; }
+
+#ver-c {
+  width: 2px;
+  height: 10px;
+  border: 1px solid #000;
+  left: 4px;
+  position: absolute; }
+
+#hor-c {
   width: 10px;
   height: 2px;
   border: 1px solid #000;

@@ -30,7 +30,7 @@ function showSlides(n) {
 /* */
 
 
-var open = false
+var open = false;
 
 function change() {
     if (open) {
@@ -44,7 +44,7 @@ function change() {
 
 /* */
 
-var navi = true
+var navi = true;
 
 function changeX() {
     if (navi) {
@@ -53,5 +53,71 @@ function changeX() {
     } else {
         document.getElementById("ver-3").style.display = "none";
         navi = true;
+    }
+}
+
+
+
+
+
+/* */
+
+
+var openIndex = false;
+
+function changeIndex() {
+    if (openIndex) {
+        document.getElementById("ver-a").style.display = "block";
+        openIndex = false;
+    } else {
+        document.getElementById("ver-a").style.display = "none";
+        openIndex = true;
+    }
+}
+
+/* */
+
+var naviIndex = true;
+
+function changeXIndex() {
+    if (naviIndex) {
+        document.getElementById("ver-b").style.display = "block";
+        naviIndex = false;
+    } else {
+        document.getElementById("ver-b").style.display = "none";
+        naviIndex = true;
+    }
+}
+
+
+
+
+
+/* */
+
+
+var openInner = false;
+
+function changeInner() {
+    if (openInner) {
+        document.getElementById("ver-c").style.display = "block";
+        openInner = false;
+    } else {
+        document.getElementById("ver-c").style.display = "none";
+        openInner = true;
+    }
+}
+
+/* */
+
+var naviInner = true;
+
+function changeXInner() {
+    if (naviInner) {
+        document.getElementById("ver-d").style.display = "none";
+        naviInner = false;
+    } else {
+        document.getElementById("ver-d").style.display = "block";
+        naviInner = true;
     }
 }
