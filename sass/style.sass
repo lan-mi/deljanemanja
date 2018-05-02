@@ -81,6 +81,7 @@ nav li a:focus
     border: 1px solid #fff
     left: 4px
     position: absolute
+    background-color: #fff
     
 %ver-black
     width: 2px
@@ -88,6 +89,7 @@ nav li a:focus
     border: 1px solid #000
     left: 4px
     position: absolute
+    background-color: #000
     
 %hor-white
     width: 10px
@@ -95,6 +97,7 @@ nav li a:focus
     border: 1px solid #fff
     position: absolute
     bottom: 4px
+    background-color: #fff
     
 %hor-black
     width: 10px
@@ -102,6 +105,7 @@ nav li a:focus
     border: 1px solid #000
     position: absolute
     bottom: 4px
+    background-color: #000
     
 /* Menu collapse plus div */ 
 
@@ -180,17 +184,25 @@ nav li a:focus
     top: 50%
     transform: translateY(-50%)
     
+.slide-text
+    text-align: justify
+    
 .prev
     position: absolute
     height: 100%
-    width: 100px
+    width: 10%
     top: 0
     left: 0
 	
-.prev p,
-.next p
-    font-size: 25px
-    color: #000
+.next
+    float: right
+    height: 100%
+    width: 10%
+    position: absolute
+    right: 0
+    top: 0    
+    
+%button
     text-align: center
     position: relative
     top: 50%
@@ -198,29 +210,106 @@ nav li a:focus
     -webkit-transform: translateY(-50%)
     transform: translateY(-50%)
     cursor: pointer
-    padding: 30px
-	
-.next
+    
+.next img
+    @extend %button
+    float: right
+    
+.prev img
+    @extend %button
     float: left
-    height: 100%
-    width: 100px
-    position: absolute
-    right: 0
-    top: 0    
     
 .number
     position: absolute
     bottom: -35px
+    left: 10px
     
 .img-text
     position: absolute
     bottom: 0
     width: 100px
     right: 1px
-    margin-bottom: -12px
+    margin-bottom: -7px
     padding-left: 8px
     
 /* Biography page */
 
 .bio
     margin-top: 20px
+    
+/* Media screens ======================= */
+
+@media screen and (max-width: 1300px)
+    .slide-container
+        height: 600px
+        width: 600px
+	
+    .wrapper
+        height: 600px
+        width: 500px
+	
+    .images
+        width: 500px
+        
+    .image img
+        max-width: 400px
+        max-height: 400px
+        
+    .next img
+        float: left
+        
+@media screen and (max-width: 700px)
+    .slide-container
+        height: 400px
+        width: 400px
+	
+    .wrapper
+        height: 400px
+        width: 300px
+	
+    .images
+        width: 300px
+        
+    .image img
+        max-width: 200px
+        max-height: 200px  
+        
+@media screen and (max-width: 458px)
+    .slide-container
+        height: 300px
+        width: 300px
+	
+    .wrapper
+        height: 300px
+        width: 200px
+	
+    .images
+        width: 200px
+        
+    .image img
+        max-width: 100px
+        max-height: 100px  
+        
+    .slide-text
+        font-size: 12px
+        padding-right: 10px
+        
+    .img-text
+        font-size: 12px
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
