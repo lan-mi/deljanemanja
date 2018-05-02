@@ -110,3 +110,17 @@ function changeXInner() {
         naviInner = true;
     }
 }
+
+/* Blur image on menu hover */
+
+var blur = false
+
+function blurImage() {
+    if (blur) {
+        document.getElementsByTagName("img")[0].className = "open";
+        blur = false;
+    } else {
+        document.getElementsByTagName("img")[0].className = "closed";
+        blur = true;
+    }
+}
