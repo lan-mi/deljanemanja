@@ -27,19 +27,7 @@ function showSlides(n) {
 }
 
 
-/* Collapsive menu plus div - show-hide */
 
-var open = false;
-
-function change() {
-    if (open) {
-        document.getElementById("ver-2").style.display = "none";
-        open = false;
-    } else {
-        document.getElementById("ver-2").style.display = "block";
-        open = true;
-    }
-}
 
 /* */
 
@@ -97,23 +85,11 @@ function changeInner() {
     }
 }
 
-/* */
 
-var naviInner = true;
-
-function changeXInner() {
-    if (naviInner) {
-        document.getElementById("ver-d").style.display = "none";
-        naviInner = false;
-    } else {
-        document.getElementById("ver-d").style.display = "block";
-        naviInner = true;
-    }
-}
 
 /* Blur image on menu hover */
 
-var blur = false
+var blur = false;
 
 function blurImage() {
     if (blur) {
@@ -122,5 +98,61 @@ function blurImage() {
     } else {
         document.getElementsByTagName("img")[0].className = "closed";
         blur = true;
+    }
+}
+
+/* Collapsive menu plus show-hide */
+
+var hello = false;
+
+function menuCollapse() {
+    if (hello) {
+        document.getElementById("link1").className = "menu-collapse";
+        hello = false;
+    } else {
+        document.getElementById("link1").className = "plus-collapse";
+        hello = true;
+    }
+}
+
+/* */
+
+var open = false;
+
+function change() {
+    if (open) {
+        document.getElementById("link").className = "plus-collapse";
+        open = false;
+    } else {
+        document.getElementById("link").className = "menu-collapse";
+        open = true;
+    }
+}
+
+/* */
+
+var openIndex = false;
+
+function changeIndex() {
+    if (openIndex) {
+        document.getElementById("link2").className = "menu-black";
+        openIndex = false;
+    } else {
+        document.getElementById("link2").className = "plus-black";
+        openIndex = true;
+    }
+}
+
+/* */
+
+var naviInner = true;
+
+function changeXInner() {
+    if (naviInner) {
+        document.getElementById("link3").className = "plus-black";
+        naviInner = false;
+    } else {
+        document.getElementById("link3").className = "menu-black";
+        naviInner = true;
     }
 }
