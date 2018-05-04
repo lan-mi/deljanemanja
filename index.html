@@ -25,15 +25,9 @@
     </div>
     <nav>
         <ul class="nav" onmouseover="blurImage();" onmouseout="blurImage();">
-            <li><a href="#" id="link1" onclick="changeIndex();" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Menu <div id="plus-a">
-                <div id="ver-a"></div>
-                <div id="hor-a"></div>
-            </div></a>
+            <li><a href="#" id="link1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false" class="menu-collapse" onclick="menuCollapse()">Menu </a>
                 <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="menu">
-                    <li><a href="#" id="link" onclick="changeXIndex();" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">Works <div id="plus-b">
-                <div id="ver-b"></div>
-                <div id="hor-b"></div>
-            </div></a>
+                    <li><a href="#" id="link" data-toggle="collapse" data-target="#submenu2" aria-expanded="false" class="menu-collapse" onclick="change()">Works </a>
                         <ul class="nav collapse" id="submenu2" role="menu" aria-labelledby="menu">
                             <li><a href="family_album.html" class="link2">Family album</a></li>
                             <li><a href="my_mother_my_father.html" class="link2">My mother / My father</a></li>

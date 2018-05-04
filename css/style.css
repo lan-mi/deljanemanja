@@ -179,6 +179,28 @@ nav li a:focus {
 .closed {
   filter: blur(0px); }
 
+/* */
+.menu-collapse:after {
+  content: '\002B';
+  color: #fff;
+  font-size: 18px; }
+
+.plus-collapse:after {
+  content: '\2212';
+  color: #fff;
+  font-size: 18px; }
+
+/* */
+.menu-black:after {
+  content: '\002B';
+  color: #000;
+  font-size: 18px; }
+
+.plus-black:after {
+  content: '\2212';
+  color: #000;
+  font-size: 18px; }
+
 /* Media screens ======================= */
 @media screen and (max-width: 1300px) {
   .slide-container {
