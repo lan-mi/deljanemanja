@@ -101,7 +101,7 @@ function blurImage() {
     }
 }
 
-/* Collapsive menu plus show-hide */
+/* Collapsive menu plus show-hide index page */
 
 var hello = false;
 
@@ -129,7 +129,7 @@ function change() {
     }
 }
 
-/* */
+/* Collapsive menu plus show-hide other pages */
 
 var openIndex = false;
 
@@ -145,14 +145,14 @@ function changeIndex() {
 
 /* */
 
-var naviInner = true;
+var naviInner = false;
 
 function changeXInner() {
     if (naviInner) {
-        document.getElementById("link3").className = "plus-black";
+        document.getElementById("link3").className = "menu-black";
         naviInner = false;
     } else {
-        document.getElementById("link3").className = "menu-black";
+        document.getElementById("link3").className = "plus-black";
         naviInner = true;
     }
 }

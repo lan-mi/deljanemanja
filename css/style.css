@@ -6,7 +6,7 @@ body {
 nav {
   width: 200px;
   line-height: 70%;
-  margin: 50px; }
+  margin: 45px 50px; }
 
 nav li a {
   color: #fff !important;
@@ -62,46 +62,6 @@ nav li a:focus {
   color: #fff;
   text-decoration: none; }
 
-/* Variables for collapsive menu*/
-#plus-a, #plus-b, #plus-2, #plus-3, #plus-d, #plus-c {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  position: relative; }
-
-#ver-a, #ver-b {
-  width: 2px;
-  height: 10px;
-  border: 1px solid #fff;
-  left: 4px;
-  position: absolute;
-  background-color: #fff; }
-
-#ver-2, #ver-3, #ver-d, #ver-c {
-  width: 2px;
-  height: 10px;
-  border: 1px solid #000;
-  left: 4px;
-  position: absolute;
-  background-color: #000; }
-
-#hor-a, #hor-b {
-  width: 10px;
-  height: 2px;
-  border: 1px solid #fff;
-  position: absolute;
-  bottom: 4px;
-  background-color: #fff; }
-
-#hor-2, #hor-3, #hor-d, #hor-c {
-  width: 10px;
-  height: 2px;
-  border: 1px solid #000;
-  position: absolute;
-  bottom: 4px;
-  background-color: #000; }
-
-/* Menu collapse plus div */
 /* Slider */
 .slide-container {
   bottom: 15px;
@@ -179,7 +139,7 @@ nav li a:focus {
 .closed {
   filter: blur(0px); }
 
-/* */
+/* Menu collapse plus-minus index page */
 .menu-collapse:after {
   content: '\002B';
   color: #fff;
@@ -190,18 +150,22 @@ nav li a:focus {
   color: #fff;
   font-size: 18px; }
 
-/* */
+/* Menu collapse plus-minus other pages */
 .menu-black:after {
-  content: '\002B';
-  color: #000;
-  font-size: 18px; }
-
-.plus-black:after {
   content: '\2212';
   color: #000;
   font-size: 18px; }
 
+.plus-black:after {
+  content: '\002B';
+  color: #000;
+  font-size: 18px; }
+
 /* Media screens ======================= */
+@media screen and (max-width: 1370px) and (min-width: 1300px) {
+  .img img {
+    width: 1370px; } }
+
 @media screen and (max-width: 1300px) {
   .slide-container {
     height: 600px;
